@@ -41,7 +41,7 @@ var upgrader = websocket.Upgrader{
 		if strings.HasPrefix(r.Header.Get("Origin"), "http://localhost") {
 			return true
 		}
-		return false
+		return true
 	},
 }
 
